@@ -1,0 +1,63 @@
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>if "" == "" set IMPLEMENTATION_HOME=c:\jv\implementation 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>set JAVA_HOME=c:\Progra~1\Java\jdk1.6.0_33 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>set ANT_OPTS=-Xms32m -Xmx512m -Xloggc:gc.log -Dsps.editdoc.jdocgen.TypeHelper=sps.busdoc.type.BusTypeHelper -Djava.util.logging.config.file=c:\jv\implementation\builder\logging.properties 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>rem To profile add this to the ANT_OPTS: -agentlib:hprof=cpu=times,depth=25,thread=y,file=hprof.txt 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>set classpath= 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>rem need to set so that mail logger works. 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>if "" == "" set ANT_LOGGER=org.apache.tools.ant.NoBannerLogger 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>if exist implementation*.log* del/q implementation*.log* 
+
+C:\Users\akonshin\Dropbox\Projects\p_WF_Helper\WindowsFormsApplication1\bin\Debug>call ant.bat -logger org.apache.tools.ant.NoBannerLogger -buildfile c:\jv\implementation\builder\build.xml -Dhub=douglasItaly WebForms 
+Buildfile: c:\jv\implementation\builder\build.xml
+
+init:
+     [echo] Implementation ant build script using 1.6.0_33 to process c:\jv\implementation\builder
+
+init:
+    [mkdir] Created dir: c:\jv\implementation\builder\WebForms
+
+copyLibs:
+     [copy] Copying 1 file to c:\jv\implementation\lib
+     [copy] Copying 11 files to c:\jv\implementation\lib\web
+
+copyHubStatic:
+     [echo] Copying static files for douglasItaly (c:\jv\implementation\builder/../maps/*/douglasItaly/web/**/*.js).
+     [copy] Copying 3 files to c:\jv\implementation\builder\WebForms
+[buildXtencils] type=web
+[buildXtencils] hub=douglasItaly
+[buildXtencils] division=null
+[buildXtencils] Searching web directories in c:\jv\implementation\maps
+[buildXtencils] d\douglasItaly\web
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: E200009: Could not display info for all targets because some targets don't exist
+     [exec] svn: E150000: 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' is not under version control
+[buildXtencils] JFormConfig: Using [default]
+[buildXtencils] Note: source code generator using type helper:sps.busdoc.type.BusTypeHelper
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\invoice.xtl' was not found.
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\invoice.xtl' was not found.
+     [exec] svn: E200009: Could not display info for all targets because some targets don't exist
+     [exec] svn: E150000: 'C:\jv\implementation\maps\d\douglasItaly\web\invoice.xtl' is not under version control
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: E200009: Could not display info for all targets because some targets don't exist
+     [exec] svn: E150000: 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' is not under version control
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\despatchAdvice.xtl' was not found.
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\despatchAdvice.xtl' was not found.
+     [exec] svn: E200009: Could not display info for all targets because some targets don't exist
+     [exec] svn: E150000: 'C:\jv\implementation\maps\d\douglasItaly\web\despatchAdvice.xtl' is not under version control
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: warning: W155010: The node 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' was not found.
+     [exec] svn: E200009: Could not display info for all targets because some targets don't exist
+     [exec] svn: E150000: 'C:\jv\implementation\maps\d\douglasItaly\web\purchaseOrderMessage.xtl' is not under version control
+
+BUILD SUCCESSFUL
+Total time: 15 seconds

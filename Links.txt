@@ -1,0 +1,2 @@
+http://bytes.com/topic/c-sharp/answers/259841-cannot-run-command-process-windows-service    -   Start prcess without window
+http://support.microsoft.com/kb/301101/ru - XML parser

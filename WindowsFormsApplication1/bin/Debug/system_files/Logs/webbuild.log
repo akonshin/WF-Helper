@@ -1,0 +1,29 @@
+Buildfile: C:\jv\JLabel2\builder\docViews.xml
+
+init-dependencies:
+     [echo] Loading dependency paths from file: C:\jv\JLabel2\builder\target\build-dependencies.xml
+
+compile:
+     [echo] Compiling classes for docViews/fastenal/shippingLabelApplet.jar
+     [copy] Copying 1 file to C:\jv\JLabel2\builder\target\client\tmpjavadocViews\fastenal
+     [copy] Copying 1 file to C:\jv\JLabel2\builder\target\client
+  [replace] Replaced 1 occurrences in 1 files.
+  [replace] Replaced 0 occurrences in 0 files.
+    [javac] C:\jv\JLabel2\builder\jar.xml:27: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to C:\jv\JLabel2\builder\target\client
+    [javac] Note: C:\jv\JLabel2\src\sps\webec\jlabel2\hubs\fastenal\PortraitLabel_1.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+resources:
+     [copy] Copying 1 file to C:\jv\JLabel2\builder\target\client\tmprscdocViews\fastenal
+
+jar:
+     [echo] Manifest for docViews/fastenal/shippingLabelApplet: ${manifest}
+
+jarNoManifest:
+     [echo] jarNoManifest
+      [jar] Building jar: C:\jv\JLabel2\builder\target\client\docViews\fastenal\shippingLabelApplet.jar
+      [jar] Updating jar: C:\jv\JLabel2\builder\target\client\docViews\fastenal\shippingLabelApplet.jar
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
